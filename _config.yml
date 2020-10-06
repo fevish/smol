@@ -36,8 +36,8 @@ markdown: kramdown
 
 plugins:
     - jekyll-sitemap
-    - jekyll-redirect-from
-    #   - jekyll-minifier
+    # - jekyll-redirect-from
+    #  - jekyll-minifier
 
 defaults:
   -

@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://0.0.0.0:4000/icomoon</loc>
-</url>
-<url>
 <loc>http://0.0.0.0:4000/</loc>
 </url>
 <url>
 <loc>http://0.0.0.0:4000/medicine-hat-web-design</loc>
 </url>
 <url>
-<loc>http://0.0.0.0:4000/time-capsule</loc>
+<loc>http://0.0.0.0:4000/ContactForm_v12/ContactFrom_v12/</loc>
+<lastmod>2020-10-06T14:24:53-06:00</lastmod>
 </url>
 </urlset>
