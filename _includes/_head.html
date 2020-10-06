@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description"
+        content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="author" content=" ">
+    <meta name="google-site-verification" content=" " />
+
+    <!-- OG META Tags -->
+
+    {% if page.title %}
+    <meta content="{{ page.title }}" property="og:title" />
+    {% else %}
+    <meta content="{{ site.title }}" property="og:title" />
+    {% endif %}
+
+    <meta property="og:type" content="website" />
+    <meta property="fb:app_id" content="" />
+
+    <meta property="og:description"
+        content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:locale" content="en_US" />
+
+    {% if page.image %}
+    <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
+    <meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />
+    {% elsif page.ximage %}
+    <meta property="og:image" content="{{ page.ximage }}" />
+    <meta name="twitter:image" content="{{ page.ximage }}" />
+    {% else %}
+    <meta property="og:image" content="{{ site.url }}/assets/images/logo.jpg" />
+    <meta name="twitter:image" content="{{ site.url }}/assets/images/logo.jpg" />
+    {% endif %}
+
+    <meta property="og:url"
+        content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <meta name="twitter:card" content="summary_large_image">
+    <!--  Non-Essential, But Recommended -->
+    <meta name="twitter:image:alt" content="" />
+
+    <!-- CSS and Scripts -->
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/stylesheets/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/stylesheets/css/jquery-ui.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/stylesheets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/stylesheets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/stylesheets/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/stylesheets/css/jquery.fancybox.min.css">
+
+ 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115588119-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115588119-4');
+</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '535579760205933');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=535579760205933&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}assets/favicon/apple-touch-icon.png?v=00BvNwObkw">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}assets/favicon/favicon-32x32.png?v=00BvNwObkw">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}assets/favicon/favicon-16x16.png?v=00BvNwObkw">
+<link rel="manifest" href="{{ site.baseurl }}assets/favicon/site.webmanifest?v=00BvNwObkw">
+<link rel="mask-icon" href="{{ site.baseurl }}assets/favicon/safari-pinned-tab.svg?v=00BvNwObkw" color="#32dbc6">
+<link rel="shortcut icon" href="{{ site.baseurl }}assets/favicon/favicon.ico?v=00BvNwObkw">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
